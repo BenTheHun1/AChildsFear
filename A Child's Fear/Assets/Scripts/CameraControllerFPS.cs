@@ -2,21 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraControllerFPS : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public float mouseSensitivity;
-    public Transform player;
+    public Transform playerBody;
     private float xRotation = 0f;
     private RaycastHit hit;
-    private Vector3 offset;
 
-    public bool inControl;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        offset = player.position - transform.position;
     }
 
     // Update is called once per frame
@@ -31,20 +26,11 @@ public class CameraController : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        player.Rotate(0, mouseX, 0);
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
-        float desiredAngle = player.eulerAngles.y;
-        Quaternion rotation = Quaternion.Euler(0, desiredAngle, 0);
-        transform.position = player.position - (rotation * offset);
-
-        float desiredX = player.eulerAngles.x;
-        Quaternion rotation2 = Quaternion.Euler(desiredAngle, 0, 0);
-        transform.position = player.position - (rotation2 * offset);
-
-
-        transform.LookAt(player);
-
-        
+        playerBody.Rotate(Vector3.up * mouseX);
 
 
     }
