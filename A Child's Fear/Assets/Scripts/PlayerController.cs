@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     private float groundDistance = 0.4f;
     public LayerMask groundMask;
+    public LayerMask deathMask;
 
     private float speed = 4f;
     private float gravity = 0.3f * (-9.81f * 6);
@@ -21,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     public Vector3 velocity;
     public bool isOnGround;
-
+    public bool isOnDeath;
     public RaycastHit ray;
 
     float desiredHeight;
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         isOnGround = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask); //Checks if you are on a Ground layer object
-
+        isOnDeath = Physics.CheckSphere(groundCheck.position, groundDistance, deathMask);
         if (isOnGround && velocity.y < 0)
         {
             velocity.y = -2f; //Stops y velocity from infinitely decreasing
@@ -83,7 +84,7 @@ public class PlayerController : MonoBehaviour
             m_isAxisInUse = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) || isOnDeath)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -100,6 +101,10 @@ public class PlayerController : MonoBehaviour
             {
                 buyableItem = null;
             }
+        }
+        if (buyableItem.name == "Key")
+        {
+
         }
     }
 }

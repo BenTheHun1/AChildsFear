@@ -281,8 +281,12 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 2048
+  deathMask:
+    serializedVersion: 2
+    m_Bits: 512
   velocity: {x: 0, y: 0, z: 0}
   isOnGround: 1
+  isOnDeath: 0
   buyableItem: {fileID: 0}
 --- !u!1 &532349881787020522
 GameObject:
