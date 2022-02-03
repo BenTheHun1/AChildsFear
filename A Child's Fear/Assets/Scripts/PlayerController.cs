@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public CameraController cc;
 
     public Transform groundCheck;
-    private float groundDistance = 0.4f;
+    private float groundDistance = 0.2f;
     public LayerMask groundMask;
     public LayerMask deathMask;
 
@@ -28,8 +28,12 @@ public class PlayerController : MonoBehaviour
     float desiredHeight;
 
     public GameObject buyableItem;
+    public TextMeshProUGUI hudText;
+    private int keys;
 
     private bool m_isAxisInUse = false;
+
+
 
     void Start()
     {
@@ -89,7 +93,7 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        //Bringing up info on buyable item you're looking at
+        //Detect and show info on item
         if (ray.transform != null)
         {
             if (ray.transform.gameObject.CompareTag("Item") && Vector3.Distance(ray.transform.position, gameObject.transform.position) < 4f)
@@ -102,9 +106,31 @@ public class PlayerController : MonoBehaviour
                 buyableItem = null;
             }
         }
-        if (buyableItem.name == "Key")
+        if (buyableItem != null)
         {
+            if (buyableItem.name == "Key")
+            {
+                hudText.text = "[E] Take " + buyableItem.name;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    keys++;
+                }
+            }
 
+            //Use item
+            
         }
+        else
+        {
+            hudText.text = "";
+        }
+
+        
+    }
+    void UpdateUI()
+    {
+        keys++;
     }
 }
+
+
