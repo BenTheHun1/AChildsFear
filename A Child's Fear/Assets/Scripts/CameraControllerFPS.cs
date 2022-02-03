@@ -20,7 +20,8 @@ public class CameraControllerFPS : MonoBehaviour
         Ray ray = gameObject.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit))
         {
-            //playerBody.gameObject.GetComponent<PlayerController>().ray = hit;
+            //print(hit.transform.gameObject.name);
+            playerBody.gameObject.GetComponent<PlayerController>().ray = hit;
         }
 
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;

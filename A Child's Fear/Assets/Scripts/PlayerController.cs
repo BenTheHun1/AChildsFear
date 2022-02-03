@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     //Variables
     public CharacterController controller;
-    public CameraController cc;
+    public CameraControllerFPS cc;
 
     public Transform groundCheck;
     private float groundDistance = 0.2f;
@@ -18,25 +18,32 @@ public class PlayerController : MonoBehaviour
 
     private float speed = 4f;
     private float gravity = 0.3f * (-9.81f * 6);
-    private float jumpHeight = 2f;
+    private float jumpHeight;
+    private float defaultHeight = 1.85f;
 
     public Vector3 velocity;
     public bool isOnGround;
     public bool isOnDeath;
     public RaycastHit ray;
 
-    float desiredHeight;
+    public float desiredHeight;
 
     public GameObject buyableItem;
-    public TextMeshProUGUI hudText;
+    private TextMeshProUGUI hudText;
+    private TextMeshProUGUI keyCount;
     private int keys;
 
     private bool m_isAxisInUse = false;
 
-
+    bool jumpPrep = false;
 
     void Start()
     {
+        hudText = GameObject.Find("HUD Text").gameObject.GetComponent<TextMeshProUGUI>();
+        keyCount = GameObject.Find("Key Count").gameObject.GetComponent<TextMeshProUGUI>();
+
+
+        UpdateUI();
     }
 
     void Update()
@@ -57,21 +64,42 @@ public class PlayerController : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
 
-        if (Input.GetButtonDown("Jump") && isOnGround)
+        /*if (Input.GetButtonDown("Jump") && isOnGround)
         {
+            jumpHeight = 2f;
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }*/
+        if (Input.GetButton("Jump") && isOnGround && jumpHeight < 3f)
+        {
+            jumpPrep = true;
+            jumpHeight += 1f * Time.deltaTime;
+            desiredHeight -= .3f * Time.deltaTime; 
+        }
+        if (Input.GetButtonUp("Jump") && isOnGround)
+        {
+            if (jumpHeight < 1f)
+            {
+                jumpHeight = 1f;
+            }
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            jumpHeight = 0f;
+            jumpPrep = false;
+            desiredHeight = defaultHeight;
         }
 
         controller.Move(velocity * Time.deltaTime);
 
         //Crouching System
-        if (Input.GetAxis("Crouch") > 0)
+        if (!jumpPrep)
         {
-            desiredHeight = 1f;
-        }
-        else
-        {
-            desiredHeight = 2f;
+            if (Input.GetAxis("Crouch") > 0)
+            {
+                desiredHeight = 1f;
+            }
+            else
+            {
+                desiredHeight = defaultHeight;
+            }
         }
         controller.height = Mathf.Lerp(controller.height, desiredHeight, 0.1f);
 
@@ -106,6 +134,10 @@ public class PlayerController : MonoBehaviour
                 buyableItem = null;
             }
         }
+        else
+        {
+            buyableItem = null;
+        }
         if (buyableItem != null)
         {
             if (buyableItem.name == "Key")
@@ -114,10 +146,27 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     keys++;
+                    UpdateUI();
+                    Destroy(buyableItem);
                 }
             }
-
-            //Use item
+            else if (buyableItem.name == "Door")
+            {
+                if (keys >= 1)
+                {
+                    hudText.text = "[E] Open " + buyableItem.name;
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        keys--;
+                        UpdateUI();
+                        Destroy(buyableItem);
+                    }
+                }
+                else
+                {
+                    hudText.text = "Locked";
+                }
+            }
             
         }
         else
@@ -129,7 +178,7 @@ public class PlayerController : MonoBehaviour
     }
     void UpdateUI()
     {
-        keys++;
+        keyCount.text = keys + " Keys";
     }
 }
 

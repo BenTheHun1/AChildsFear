@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraController3RD : MonoBehaviour
 {
     // Start is called before the first frame update
 
@@ -25,7 +25,8 @@ public class CameraController : MonoBehaviour
         Ray ray = gameObject.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out hit))
         {
-            //playerBody.gameObject.GetComponent<PlayerController>().ray = hit;
+            print(hit.transform.gameObject.name);
+            player.gameObject.GetComponent<PlayerController>().ray = hit;
         }
 
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
