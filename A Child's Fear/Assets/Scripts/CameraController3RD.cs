@@ -8,7 +8,7 @@ public class CameraController3RD : MonoBehaviour
 
     public float mouseSensitivity;
     public Transform player;
-    private float xRotation = 0f;
+    //private float xRotation = 0f;
     private RaycastHit hit;
     private Vector3 offset;
 
