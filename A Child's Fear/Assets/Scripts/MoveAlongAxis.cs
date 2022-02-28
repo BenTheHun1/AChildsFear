@@ -10,7 +10,7 @@ public class MoveAlongAxis : MonoBehaviour
     private float newPos;
     private float nextHeight;
     public float speed;
-    private float sensitivity = 0.1f;
+    
     
 
     public enum axis {x, y, z}
