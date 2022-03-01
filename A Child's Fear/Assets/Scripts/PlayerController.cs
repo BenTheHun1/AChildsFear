@@ -48,8 +48,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        isOnGround = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask); //Checks if you are on a Ground layer object
-        isOnDeath = Physics.CheckSphere(groundCheck.position, groundDistance, deathMask);
+        isOnGround = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, groundMask); //Checks if you are on a Ground layer object
+        isOnDeath = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, deathMask);
         if (isOnGround && velocity.y < 0)
         {
             velocity.y = -2f; //Stops y velocity from infinitely decreasing

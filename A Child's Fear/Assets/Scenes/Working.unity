@@ -178,30 +178,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 532349882025819758, guid: 5b5ff9d569a2aa245a9bddc6ddd9777b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 532349882025819758, guid: 5b5ff9d569a2aa245a9bddc6ddd9777b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 532349882025819758, guid: 5b5ff9d569a2aa245a9bddc6ddd9777b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4852112486292683214, guid: 5b5ff9d569a2aa245a9bddc6ddd9777b, type: 3}
-      propertyPath: m_Range
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 4852112486292683214, guid: 5b5ff9d569a2aa245a9bddc6ddd9777b, type: 3}
-      propertyPath: m_SpotAngle
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 4852112486292683214, guid: 5b5ff9d569a2aa245a9bddc6ddd9777b, type: 3}
-      propertyPath: m_InnerSpotAngle
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b5ff9d569a2aa245a9bddc6ddd9777b, type: 3}
 --- !u!1001 &525425311

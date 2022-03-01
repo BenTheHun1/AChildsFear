@@ -5,8 +5,8 @@ using UnityEngine;
 public class MoveAlongAxis : MonoBehaviour
 {
     public axis inputAxis;
-    private float originalHeight; //Cannot be 0
-    public float inputNextValueOnAxis; //Cannot be 0
+    private float originalHeight;
+    public float inputNextValueOnAxis;
     private float newPos;
     private float nextHeight;
     public float speed;
