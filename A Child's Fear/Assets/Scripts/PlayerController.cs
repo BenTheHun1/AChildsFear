@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     private float speed = 4f;
     private float gravity = 0.3f * (-9.81f * 6);
     private float jumpHeight;
-    private float defaultHeight = 1.85f;
+    private float defaultHeight;
 
     public Vector3 velocity;
     public bool isOnGround;
@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        defaultHeight = gameObject.GetComponent<CharacterController>().height;
         hudText = GameObject.Find("HUD Text").gameObject.GetComponent<TextMeshProUGUI>();
         keyCount = GameObject.Find("Key Count").gameObject.GetComponent<TextMeshProUGUI>();
 
