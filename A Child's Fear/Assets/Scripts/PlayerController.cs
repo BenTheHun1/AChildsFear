@@ -30,10 +30,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject buyableItem;
     private TextMeshProUGUI hudText;
-    private TextMeshProUGUI keyCount;
-    private int keys;
 
-    private bool m_isAxisInUse = false;
+    //private bool m_isAxisInUse = false;
 
     bool jumpPrep = false;
 
@@ -43,12 +41,13 @@ public class PlayerController : MonoBehaviour
     public GameObject flashlightObject;
     public Image slingshotIcon;
     public GameObject slingshotObject;
+    public Image keyIcon;
+    public GameObject keyObject;
 
     void Start()
     {
         defaultHeight = gameObject.GetComponent<CharacterController>().height;
         hudText = GameObject.Find("HUD Text").gameObject.GetComponent<TextMeshProUGUI>();
-        keyCount = GameObject.Find("Key Count").gameObject.GetComponent<TextMeshProUGUI>();
 
 
         UpdateUI();
@@ -116,7 +115,7 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if (Input.mouseScrollDelta.y > 0)
+        if (Input.mouseScrollDelta.y < 0)
         {
             if (currentItem < maxItems)
             {
@@ -128,7 +127,7 @@ public class PlayerController : MonoBehaviour
             }
             UpdateUI();
         }
-        else if (Input.mouseScrollDelta.y < 0)
+        else if (Input.mouseScrollDelta.y > 0)
         {
             if (currentItem > 1)
             {
@@ -166,19 +165,21 @@ public class PlayerController : MonoBehaviour
                 hudText.text = "[E] Take " + buyableItem.name;
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    keys++;
+                    keyIcon.gameObject.SetActive(true);
+                    maxItems++;
                     UpdateUI();
                     Destroy(buyableItem);
                 }
             }
             else if (buyableItem.name == "Door")
             {
-                if (keys >= 1)
+                if (currentItem == 3)
                 {
                     hudText.text = "[E] Open " + buyableItem.name;
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        keys--;
+                        keyIcon.gameObject.SetActive(false);
+                        maxItems--;
                         UpdateUI();
                         Destroy(buyableItem);
                     }
@@ -199,20 +200,32 @@ public class PlayerController : MonoBehaviour
     }
     void UpdateUI()
     {
-        keyCount.text = keys + " Keys";
         if (currentItem == 1)
         {
             flashlightIcon.color = Color.white;
             slingshotIcon.color = new Color(0.43f, 0.43f, 0.43f);
+            keyIcon.color = new Color(0.43f, 0.43f, 0.43f);
             flashlightObject.SetActive(true);
             slingshotObject.SetActive(false);
+            keyObject.SetActive(false);
         }
         else if (currentItem == 2)
         {
             flashlightIcon.color = new Color(0.43f, 0.43f, 0.43f);
             slingshotIcon.color = Color.white;
+            keyIcon.color = new Color(0.43f, 0.43f, 0.43f);
             flashlightObject.SetActive(false);
             slingshotObject.SetActive(true);
+            keyObject.SetActive(false);
+        }
+        else if (currentItem == 3)
+        {
+            flashlightIcon.color = new Color(0.43f, 0.43f, 0.43f);
+            slingshotIcon.color = new Color(0.43f, 0.43f, 0.43f);
+            keyIcon.color = Color.white;
+            flashlightObject.SetActive(false);
+            slingshotObject.SetActive(false);
+            keyObject.SetActive(true);
         }
     }
 }
