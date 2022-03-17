@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButton("Jump") && isOnGround && jumpHeight < 3f)
         {
             jumpPrep = true;
-            jumpHeight += 1f * Time.deltaTime;
+            jumpHeight += 2f * Time.deltaTime;
             desiredHeight -= .3f * Time.deltaTime; 
         }
         if (Input.GetButtonUp("Jump") && isOnGround)
@@ -200,6 +200,10 @@ public class PlayerController : MonoBehaviour
     }
     void UpdateUI()
     {
+        if (currentItem > maxItems || currentItem <= 0)
+        {
+            currentItem = 1;
+        }
         if (currentItem == 1)
         {
             flashlightIcon.color = Color.white;
