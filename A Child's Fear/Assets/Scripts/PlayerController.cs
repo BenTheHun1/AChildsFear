@@ -37,6 +37,13 @@ public class PlayerController : MonoBehaviour
 
     bool jumpPrep = false;
 
+    private int currentItem = 1;
+    private int maxItems = 2;
+    public Image flashlightIcon;
+    public GameObject flashlightObject;
+    public Image slingshotIcon;
+    public GameObject slingshotObject;
+
     void Start()
     {
         defaultHeight = gameObject.GetComponent<CharacterController>().height;
@@ -104,23 +111,36 @@ public class PlayerController : MonoBehaviour
         }
         controller.height = Mathf.Lerp(controller.height, desiredHeight, 0.1f);
 
-        //Make sword swing only occur once
-        if (Input.GetAxisRaw("Fire1") != 0)
-        {
-            if (m_isAxisInUse == false)
-            {
-                m_isAxisInUse = true;
-            }
-        }
-        if (Input.GetAxisRaw("Fire1") == 0)
-        {
-            m_isAxisInUse = false;
-        }
-
         if (Input.GetKeyDown(KeyCode.R) || isOnDeath)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        if (Input.mouseScrollDelta.y > 0)
+        {
+            if (currentItem < maxItems)
+            {
+                currentItem++;
+            }
+            else
+            {
+                currentItem = 1;
+            }
+            UpdateUI();
+        }
+        else if (Input.mouseScrollDelta.y < 0)
+        {
+            if (currentItem > 1)
+            {
+                currentItem--;
+            }
+            else
+            {
+                currentItem = maxItems;
+            }
+            UpdateUI();
+        }
+
 
         //Detect and show info on item
         if (ray.transform != null)
@@ -180,6 +200,20 @@ public class PlayerController : MonoBehaviour
     void UpdateUI()
     {
         keyCount.text = keys + " Keys";
+        if (currentItem == 1)
+        {
+            flashlightIcon.color = Color.white;
+            slingshotIcon.color = new Color(0.43f, 0.43f, 0.43f);
+            flashlightObject.SetActive(true);
+            slingshotObject.SetActive(false);
+        }
+        else if (currentItem == 2)
+        {
+            flashlightIcon.color = new Color(0.43f, 0.43f, 0.43f);
+            slingshotIcon.color = Color.white;
+            flashlightObject.SetActive(false);
+            slingshotObject.SetActive(true);
+        }
     }
 }
 
