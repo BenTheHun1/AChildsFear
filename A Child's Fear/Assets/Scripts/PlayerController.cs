@@ -79,8 +79,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButton("Jump") && isOnGround && jumpHeight < 3f)
         {
             jumpPrep = true;
-            jumpHeight += 2f * Time.deltaTime;
-            desiredHeight -= .3f * Time.deltaTime; 
+            jumpHeight += 3f * Time.deltaTime;
+            desiredHeight -= .5f * Time.deltaTime; 
         }
         if (Input.GetButtonUp("Jump") && isOnGround)
         {
