@@ -19,7 +19,7 @@ public class DropStart : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Landed on " + other.gameObject.name + "!");
+        //Debug.Log("Landed on " + other.gameObject.name + "!");
         if (other.gameObject.TryGetComponent<Drop>(out platform))
         {
             platform.dropping = true;

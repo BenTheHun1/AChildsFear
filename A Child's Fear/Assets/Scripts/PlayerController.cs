@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if (Input.mouseScrollDelta.y < 0)
+        if (Input.mouseScrollDelta.y < 0 && Time.timeScale == 1)
         {
             if (currentItem < maxItems)
             {
@@ -127,7 +127,7 @@ public class PlayerController : MonoBehaviour
             }
             UpdateUI();
         }
-        else if (Input.mouseScrollDelta.y > 0)
+        else if (Input.mouseScrollDelta.y > 0 && Time.timeScale == 1)
         {
             if (currentItem > 1)
             {
