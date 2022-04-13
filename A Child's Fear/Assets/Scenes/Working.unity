@@ -508,6 +508,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+--- !u!1 &780714139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9118054994425804644, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+  m_PrefabInstance: {fileID: 636164778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &780714143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780714139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc99a78d17304d4c9abea0abb291989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1602180708
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,8 +624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec55ffea0b1a69645a9eed053b17f1b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputAxis: 1
-  inputNextValueOnAxis: -3
+  inputAxis: 2
+  inputNextValueOnAxis: 5
   speed: 1.1
 --- !u!54 &1993470512
 Rigidbody:
