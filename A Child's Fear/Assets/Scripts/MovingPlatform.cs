@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SMovingPlatform : MonoBehaviour
+public class MovingPlatform : MonoBehaviour
 {
     public Transform activePlatform;
 
@@ -25,6 +25,7 @@ public class SMovingPlatform : MonoBehaviour
         if (activePlatform != null)
         {
             Vector3 newGlobalPlatformPoint = activePlatform.TransformPoint(activeLocalPlatformPoint);
+            //Debug.Log(newGlobalPlatformPoint + " " + activeGlobalPlatformPoint);
             moveDirection = newGlobalPlatformPoint - activeGlobalPlatformPoint;
             if (moveDirection.magnitude > 0.01f)
             {
@@ -55,6 +56,7 @@ public class SMovingPlatform : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        
         // Make sure we are really standing on a straight platform *NEW*
         // Not on the underside of one and not falling down from it either!
         if (hit.moveDirection.y < -0.9 && hit.normal.y > 0.41)
@@ -62,6 +64,7 @@ public class SMovingPlatform : MonoBehaviour
             if (activePlatform != hit.collider.transform)
             {
                 activePlatform = hit.collider.transform;
+                
                 UpdateMovingPlatform();
             }
         }
@@ -75,6 +78,7 @@ public class SMovingPlatform : MonoBehaviour
     {
         activeGlobalPlatformPoint = transform.position;
         activeLocalPlatformPoint = activePlatform.InverseTransformPoint(transform.position);
+        
         // Support moving platform rotation
         activeGlobalPlatformRotation = transform.rotation;
         activeLocalPlatformRotation = Quaternion.Inverse(activePlatform.rotation) * transform.rotation;
