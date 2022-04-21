@@ -1,0 +1,463 @@
+fileFormatVersion: 2
+guid: 256fb7ab42404f94c86d007b623e5626
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: sneak
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: sneak
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mesh_rig_rontroller:hip
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:h_left
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:h_left/mesh_rig_rontroller:knee_left
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:h_left/mesh_rig_rontroller:knee_left/mesh_rig_rontroller:he_left
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:h_left/mesh_rig_rontroller:knee_left/mesh_rig_rontroller:he_left/mesh_rig_rontroller:t_left
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:h_right
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:h_right/mesh_rig_rontroller:knee_right
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:h_right/mesh_rig_rontroller:knee_right/mesh_rig_rontroller:he_right
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:h_right/mesh_rig_rontroller:knee_right/mesh_rig_rontroller:he_right/mesh_rig_rontroller:t_right
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest/mesh_rig_rontroller:shoulder
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest/mesh_rig_rontroller:shoulder/mesh_rig_rontroller:kneck
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest/mesh_rig_rontroller:shoulder/mesh_rig_rontroller:sh_left
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest/mesh_rig_rontroller:shoulder/mesh_rig_rontroller:sh_left/mesh_rig_rontroller:el_left
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest/mesh_rig_rontroller:shoulder/mesh_rig_rontroller:sh_left/mesh_rig_rontroller:el_left/mesh_rig_rontroller:ha_left
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest/mesh_rig_rontroller:shoulder/mesh_rig_rontroller:sh_left/mesh_rig_rontroller:el_left/mesh_rig_rontroller:ha_left/mesh_rig_rontroller:pointer_left
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest/mesh_rig_rontroller:shoulder/mesh_rig_rontroller:sh_right
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest/mesh_rig_rontroller:shoulder/mesh_rig_rontroller:sh_right/mesh_rig_rontroller:el_right
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest/mesh_rig_rontroller:shoulder/mesh_rig_rontroller:sh_right/mesh_rig_rontroller:el_right/mesh_rig_rontroller:ha_right
+        weight: 1
+      - path: mesh_rig_rontroller:hip/mesh_rig_rontroller:spine/mesh_rig_rontroller:chest/mesh_rig_rontroller:shoulder/mesh_rig_rontroller:sh_right/mesh_rig_rontroller:el_right/mesh_rig_rontroller:ha_right/mesh_rig_rontroller:pointer_right
+        weight: 1
+      - path: mesh_rig_rontroller:kid_1
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: mesh_rig_rontroller:hip
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:h_left
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:h_right
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:knee_left
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:knee_right
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:he_left
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:he_right
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:chest
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:sh_left
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:sh_right
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:el_left
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:el_right
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:t_left
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:t_right
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:shoulder
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:kneck
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:ha_left
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:pointer_left
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:ha_right
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mesh_rig_rontroller:pointer_right
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: sneak(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:hip
+      parentName: sneak(Clone)
+      position: {x: -0.0024976567, y: 0.3872902, z: 0}
+      rotation: {x: 0.4768414, y: 0.43949232, z: -0.5567384, w: 0.51914465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:h_left
+      parentName: mesh_rig_rontroller:hip
+      position: {x: 0.11816227, y: -0.13815856, z: 0.00031796578}
+      rotation: {x: -0.23137933, y: 0.6109049, z: 0.6211228, w: 0.43297264}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:knee_left
+      parentName: mesh_rig_rontroller:h_left
+      position: {x: -0.5974676, y: 1.02140514e-16, z: 0}
+      rotation: {x: 2.3156235e-15, y: -1.2925126e-15, z: 0.8817496, w: 0.47171783}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:he_left
+      parentName: mesh_rig_rontroller:knee_left
+      position: {x: -0.7538859, y: -0.0008820618, z: -3.5527136e-17}
+      rotation: {x: 0.000000004167764, y: -0.0000000061758314, z: -0.66889817, w: 0.743354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:t_left
+      parentName: mesh_rig_rontroller:he_left
+      position: {x: -0.28107312, y: -6.217249e-17, z: 1.7763568e-17}
+      rotation: {x: -0.051953197, y: -0.70519567, z: -0.051953197, w: 0.70519567}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:h_right
+      parentName: mesh_rig_rontroller:hip
+      position: {x: 0.118162066, y: 0.14315365, z: 0.000317966}
+      rotation: {x: -0.74097884, y: -0.2125342, z: -0.08002137, w: 0.6319622}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:knee_right
+      parentName: mesh_rig_rontroller:h_right
+      position: {x: 0.59746766, y: 0.000000020200144, z: 1.5987211e-16}
+      rotation: {x: -1.2453932e-15, y: 1.3016175e-15, z: 0.5907154, w: 0.80688}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:he_right
+      parentName: mesh_rig_rontroller:knee_right
+      position: {x: 0.75388604, y: 0.00088202377, z: 1.5987211e-16}
+      rotation: {x: -2.4632565e-16, y: -1.1396073e-16, z: -0.68424386, w: 0.72925335}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:t_right
+      parentName: mesh_rig_rontroller:he_right
+      position: {x: 0.2810731, y: 0.000000010991148, z: 1.7763567e-16}
+      rotation: {x: -0.051953197, y: -0.70519567, z: -0.051953197, w: 0.70519567}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:spine
+      parentName: mesh_rig_rontroller:hip
+      position: {x: -0.4948259, y: 1.10189636e-16, z: 0}
+      rotation: {x: 0.9999587, y: -0.009089783, z: -5.5658864e-19, w: 6.122981e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:chest
+      parentName: mesh_rig_rontroller:spine
+      position: {x: -0.2777543, y: 8.5265126e-16, z: 1.0353799e-31}
+      rotation: {x: 0.9992257, y: -0.039345756, z: -7.220239e-18, w: 6.0995484e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:shoulder
+      parentName: mesh_rig_rontroller:chest
+      position: {x: -0.16693078, y: 1.7763567e-16, z: -1.6074547e-18}
+      rotation: {x: 0.9990255, y: -0.04413699, z: -8.683991e-18, w: 6.090842e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:kneck
+      parentName: mesh_rig_rontroller:shoulder
+      position: {x: -0.1818429, y: 1.1546319e-16, z: -2.1774645e-18}
+      rotation: {x: -0.6972205, y: 0.7168567, z: -8.6587255e-17, w: -1.2023693e-18}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:sh_left
+      parentName: mesh_rig_rontroller:shoulder
+      position: {x: 0.068979725, y: 0.3011554, z: 1.113233e-16}
+      rotation: {x: 0.6030381, y: -0.38799137, z: 0.3607091, w: 0.5964031}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:el_left
+      parentName: mesh_rig_rontroller:sh_left
+      position: {x: -0.5099986, y: 1.7053025e-15, z: 0}
+      rotation: {x: 0, y: -0, z: -0.35998258, w: 0.932959}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:ha_left
+      parentName: mesh_rig_rontroller:el_left
+      position: {x: -0.5150229, y: -1.4210854e-15, z: 1.2621774e-31}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:pointer_left
+      parentName: mesh_rig_rontroller:ha_left
+      position: {x: -0.207019, y: 2.842171e-16, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:sh_right
+      parentName: mesh_rig_rontroller:shoulder
+      position: {x: 0.051736802, y: -0.3196087, z: -1.1664852e-16}
+      rotation: {x: 0.5807012, y: 0.38097084, z: -0.4112148, w: 0.59038115}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:el_right
+      parentName: mesh_rig_rontroller:sh_right
+      position: {x: 0.509998, y: -0.00000076233886, z: 9.3359587e-23}
+      rotation: {x: 0.0000000068445947, y: 0.000000008010858, z: -0.75381196, w: 0.6570903}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:ha_right
+      parentName: mesh_rig_rontroller:el_right
+      position: {x: 0.51502496, y: 0, z: -6.2444113e-19}
+      rotation: {x: 0.0000000015411628, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:pointer_right
+      parentName: mesh_rig_rontroller:ha_right
+      position: {x: 0.20701998, y: 2.842171e-16, z: -2.5102667e-19}
+      rotation: {x: 0.0000000015411628, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mesh_rig_rontroller:kid_1
+      parentName: sneak(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
