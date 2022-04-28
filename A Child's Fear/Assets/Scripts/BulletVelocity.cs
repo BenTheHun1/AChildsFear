@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletVelocity : MonoBehaviour
 {
+    [Tooltip("Time in seconds for bullet to despawn.")]
     public float time;
 
     // Start is called before the first frame update

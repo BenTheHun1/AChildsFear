@@ -7,10 +7,12 @@ public class MomController : MonoBehaviour
 {
     private Transform player;
     private NavMeshAgent agent;
+    [Tooltip("Size of sight cone")]
     public float fov;
 
     public bool canSeeKid;
 
+    [Tooltip("Array of transforms that she will go to in sequence.")]
     public Transform[] points;
     private int destPoint = 0;
 

@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class MovePlatform : MonoBehaviour
 {
+    [Tooltip("Speed platform Moves. Should be at least 1.")]
     public float speed;
+    [Tooltip("The Parent GameObject of all the transforms. Should have at least 2 children.")]
     public GameObject positionsParent; //Use at least 2 to move it
+    [Tooltip("The index of the positionsParent representing the current destination. Should start at 0.")]
     public int currentPosition;
 
 
