@@ -189,6 +189,17 @@ public class PlayerController : MonoBehaviour
                     hudText.text = "Locked";
                 }
             }
+            else if (buyableItem.name == "Button")
+            {
+                if (buyableItem.GetComponent<Buttony>().buttonType == Buttony.ButtonType.Hand)
+                {
+                    hudText.text = "[E] Push " + buyableItem.name;
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        buyableItem.GetComponent<Buttony>().Push();
+                    }
+                }
+            }
             
         }
         else
