@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovePlatform : MonoBehaviour
 {
-    [Tooltip("Delete this Platform, add MovePlatform.cs to the new platform (which is a child of PlatformKit and in the Ground Layer).\nMake sure it has a collider *and* a RIGIDBODY.\nChange the below settings as needed.")]
+    [Tooltip("Delete this Platform, add MovePlatform.cs to the new platform (which should be a child of PlatformKit and in the Ground Layer).\nMake sure it has a collider *and* a RIGIDBODY.\nChange the below settings as needed.")]
     public bool tutorial;
 
     [Tooltip("Speed platform Moves. Should be at least 1.")]
