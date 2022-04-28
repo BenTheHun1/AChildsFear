@@ -22,7 +22,7 @@ public class DropStart : MonoBehaviour
         //Debug.Log("Landed on " + other.gameObject.name + "!");
         if (other.gameObject.TryGetComponent<Drop>(out platform))
         {
-            platform.dropping = true;
+            platform.isCurrentlyDropping = true;
             Debug.Log("Dropping " + platform.gameObject.name + "!");
         }
     }
