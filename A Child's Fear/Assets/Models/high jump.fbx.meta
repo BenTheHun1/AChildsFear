@@ -1,0 +1,469 @@
+fileFormatVersion: 2
+guid: 8459d7e41435b6444ae816d4d67334f3
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: high jump
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: high jump
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: kid_smoothed:hip
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest/kid_smoothed:shoulder
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest/kid_smoothed:shoulder/kid_smoothed:kneck
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest/kid_smoothed:shoulder/kid_smoothed:shoulder_left
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest/kid_smoothed:shoulder/kid_smoothed:shoulder_left/kid_smoothed:upper_left
+          1
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest/kid_smoothed:shoulder/kid_smoothed:shoulder_left/kid_smoothed:upper_left
+          1/kid_smoothed:lower_left 1
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest/kid_smoothed:shoulder/kid_smoothed:shoulder_left/kid_smoothed:upper_left
+          1/kid_smoothed:lower_left 1/kid_smoothed:hand_left
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest/kid_smoothed:shoulder/kid_smoothed:shoulder_right
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest/kid_smoothed:shoulder/kid_smoothed:shoulder_right/kid_smoothed:upper_right
+          1
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest/kid_smoothed:shoulder/kid_smoothed:shoulder_right/kid_smoothed:upper_right
+          1/kid_smoothed:lower_right 1
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:spine/kid_smoothed:chest/kid_smoothed:shoulder/kid_smoothed:shoulder_right/kid_smoothed:upper_right
+          1/kid_smoothed:lower_right 1/kid_smoothed:hand_right
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:upper_left
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:upper_left/kid_smoothed:lower_left
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:upper_left/kid_smoothed:lower_left/kid_smoothed:foot_left
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:upper_left/kid_smoothed:lower_left/kid_smoothed:foot_left/kid_smoothed:toes_left
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:upper_right
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:upper_right/kid_smoothed:lower_right
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:upper_right/kid_smoothed:lower_right/kid_smoothed:foot_right
+        weight: 1
+      - path: kid_smoothed:hip/kid_smoothed:upper_right/kid_smoothed:lower_right/kid_smoothed:foot_right/kid_smoothed:toes_right
+        weight: 1
+      - path: kid_smoothed:kid1
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: kid_smoothed:hip
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:upper_left
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:upper_right
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:lower_left
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:lower_right
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:foot_left
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:foot_right
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:chest
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:shoulder_left
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:shoulder_right
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:upper_left 1
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:upper_right 1
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:lower_left 1
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:lower_right 1
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:hand_left
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:hand_right
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:toes_left
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:toes_right
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:shoulder
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: kid_smoothed:kneck
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: high jump(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:hip
+      parentName: high jump(Clone)
+      position: {x: 0.001125983, y: 1.3637272, z: 0}
+      rotation: {x: 0, y: -0, z: -0.70382565, w: 0.71037275}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:spine
+      parentName: kid_smoothed:hip
+      position: {x: -0.4365747, y: -9.992007e-17, z: 0}
+      rotation: {x: 0.9999587, y: -0.00909354, z: -5.568187e-19, w: 6.1229815e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:chest
+      parentName: kid_smoothed:spine
+      position: {x: -0.4527428, y: 1.2234657e-15, z: 1.4988357e-31}
+      rotation: {x: 0.99986607, y: -0.016365949, z: -3.0058395e-18, w: 6.119134e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:shoulder
+      parentName: kid_smoothed:chest
+      position: {x: -0.16981989, y: 1.7763567e-16, z: -6.806321e-19}
+      rotation: {x: 0.9997408, y: -0.022768399, z: -4.965042e-18, w: 6.113514e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:kneck
+      parentName: kid_smoothed:shoulder
+      position: {x: -0.18598445, y: -1.5987211e-16, z: -1.3286006e-18}
+      rotation: {x: -0.69938046, y: 0.7147496, z: -8.659049e-17, w: -9.410876e-19}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:shoulder_left
+      parentName: kid_smoothed:shoulder
+      position: {x: 0.05429305, y: 0.26566696, z: 9.795591e-17}
+      rotation: {x: -0.08159646, y: 0.9966655, z: -6.60245e-17, w: -5.603182e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:upper_left 1
+      parentName: kid_smoothed:shoulder_left
+      position: {x: -0.4285479, y: 0, z: -3.1554436e-32}
+      rotation: {x: 0, y: -0, z: -0.016784467, w: 0.99985915}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:lower_left 1
+      parentName: kid_smoothed:upper_left 1
+      position: {x: -0.54979664, y: -5.684342e-16, z: 3.1554436e-32}
+      rotation: {x: 0, y: -0, z: -0.009881978, w: 0.9999512}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:hand_left
+      parentName: kid_smoothed:lower_left 1
+      position: {x: -0.11729304, y: -2.842171e-16, z: 1.5777217e-31}
+      rotation: {x: 0, y: 0, z: 0.0172337, w: 0.9998515}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:shoulder_right
+      parentName: kid_smoothed:shoulder
+      position: {x: 0.042569585, y: -0.27360603, z: -1.0017963e-16}
+      rotation: {x: -6.3168437e-10, y: 0.000000007423754, z: -0.087642595, w: 0.996152}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:upper_right 1
+      parentName: kid_smoothed:shoulder_right
+      position: {x: 0.42854816, y: -0.0000043765795, z: -6.5216116e-14}
+      rotation: {x: 1.6245956e-19, y: 2.5010805e-10, z: -0.016784467, w: 0.99985915}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:lower_right 1
+      parentName: kid_smoothed:upper_right 1
+      position: {x: 0.54979736, y: 0.000004381879, z: -2.7491348e-10}
+      rotation: {x: -3.931057e-19, y: 3.9720618e-10, z: -0.009881978, w: 0.9999512}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:hand_right
+      parentName: kid_smoothed:lower_right 1
+      position: {x: 0.117289595, y: 0.0000020677364, z: -9.314099e-11}
+      rotation: {x: 2.828853e-19, y: 1.4057286e-10, z: 0.0172337, w: 0.9998515}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:upper_left
+      parentName: kid_smoothed:hip
+      position: {x: 0.13326292, y: -0.12748663, z: -0.020386478}
+      rotation: {x: 0.10895196, y: 0.7707712, z: -0.6277031, w: 0.0054902644}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:lower_left
+      parentName: kid_smoothed:upper_left
+      position: {x: -0.5734573, y: -0.049948294, z: -3.5527136e-17}
+      rotation: {x: 3.802519e-17, y: -1.6247094e-17, z: -0.17472585, w: 0.9846171}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:foot_left
+      parentName: kid_smoothed:lower_left
+      position: {x: -0.6578911, y: 0.0011370176, z: -3.5527136e-17}
+      rotation: {x: 0.6307885, y: 0.76527184, z: 0.11862453, w: -0.048919417}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:toes_left
+      parentName: kid_smoothed:foot_left
+      position: {x: -0.27559987, y: -8.437695e-17, z: -6.5725204e-16}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:upper_right
+      parentName: kid_smoothed:hip
+      position: {x: 0.13557583, y: 0.122745, z: -0.0203865}
+      rotation: {x: 0.5782041, y: -0.019419694, z: 0.102803394, w: 0.8091566}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:lower_right
+      parentName: kid_smoothed:upper_right
+      position: {x: 0.57346165, y: 0.04994862, z: 8.8817837e-17}
+      rotation: {x: -1.2568185e-16, y: -9.739263e-16, z: -0.18459016, w: 0.9828156}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:foot_right
+      parentName: kid_smoothed:lower_right
+      position: {x: 0.6578907, y: -0.0011370254, z: 1.7763567e-16}
+      rotation: {x: 0.6241144, y: 0.7607277, z: 0.14673707, w: -0.101206996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:toes_right
+      parentName: kid_smoothed:foot_right
+      position: {x: 0.2756002, y: -1.1546319e-16, z: 6.3948843e-16}
+      rotation: {x: 0.000000007450581, y: -0.7071068, z: 0.000000007450581, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kid_smoothed:kid1
+      parentName: high jump(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
