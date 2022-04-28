@@ -160,7 +160,7 @@ public class PlayerController : MonoBehaviour
         }
         if (buyableItem != null)
         {
-            if (buyableItem.name == "Key")
+            if (buyableItem.name == "Key" || buyableItem.name == "GoldKey")
             {
                 hudText.text = "[E] Take " + buyableItem.name;
                 if (Input.GetKeyDown(KeyCode.E))
