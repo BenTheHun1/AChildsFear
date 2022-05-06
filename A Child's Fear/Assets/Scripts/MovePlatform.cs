@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovePlatform : MonoBehaviour
 {
-    [Tooltip("Unpack Prefab completely (Right click->Prefab).\nDelete this Platform, add MovePlatform.cs to the new platform (which should be a child of PlatformKit and in the Ground Layer).\nMake sure it has a collider *and* a RIGIDBODY.\nChange the below settings as needed.")]
+    [Tooltip("Unpack Prefab completely (Right click->Prefab).\nDelete this Platform, add MovePlatform.cs to the new platform (which should be a child of PlatformKit and in the Ground Layer).\nMake sure it has a collider *and* a RIGIDBODY, and is in the GROUND layer.\nChange the below settings as needed, including draggin the 'Positions' object to the Positions Parent variable.")]
     public bool tutorial;
 
     [Tooltip("The type of Movement. Always Move starts right away, Move On Condition only starts to move once Current Value is at least Required Value")]
