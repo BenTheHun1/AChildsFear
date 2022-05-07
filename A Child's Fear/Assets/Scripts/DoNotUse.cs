@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveAlongAxis : MonoBehaviour
+public class DoNotUse : MonoBehaviour
 {
     public axis inputAxis;
     private float originalHeight;

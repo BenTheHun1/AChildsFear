@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DropStart : MonoBehaviour
+public class PlayerDropTest : MonoBehaviour
 {
     Drop platform;
     // Start is called before the first frame update

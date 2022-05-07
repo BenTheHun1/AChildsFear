@@ -2401,8 +2401,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8785009741465366240}
   - component: {fileID: 8785009741465366241}
-  - component: {fileID: 8785009741465366246}
   - component: {fileID: 8785009741465366247}
+  - component: {fileID: 509132771}
   m_Layer: 0
   m_Name: DropTest
   m_TagString: Player
@@ -2437,18 +2437,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1, z: 1}
   m_Center: {x: 0, y: -1.1, z: 0}
---- !u!114 &8785009741465366246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8785009741465366243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d07dc2cde3882a04495af49b6bdcb096, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &8785009741465366247
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2465,6 +2453,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &509132771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8785009741465366243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d07dc2cde3882a04495af49b6bdcb096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8785009742319835343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2745,7 +2745,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9118054994425804644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.31, y: 4.94, z: -134.4}
+  m_LocalPosition: {x: -1.31, y: 4.66, z: -134.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9118054993696303932}
