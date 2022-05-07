@@ -30,4 +30,12 @@ public class Buttony : MonoBehaviour
             beenPressed = true;
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            Push();
+        }
+    }
 }

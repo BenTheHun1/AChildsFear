@@ -131,18 +131,25 @@ public class PlayerController : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-        //Crouching System
         if (!jumpPrep)
+        {
+            desiredHeight = defaultHeight;
+        }
+
+        //Crouching System
+        /*if (!jumpPrep)
         {
             if (Input.GetAxis("Crouch") > 0)
             {
                 desiredHeight = 1f;
+                anim.SetBool("crouching", true);
             }
             else
             {
                 desiredHeight = defaultHeight;
+                anim.SetBool("crouching", false);
             }
-        }
+        }*/
         controller.height = Mathf.Lerp(controller.height, desiredHeight, 0.1f);
 
         if (Input.GetKeyDown(KeyCode.R) || isOnDeath)
