@@ -60,6 +60,23 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (gameObject.transform.position.y <-30)
+        {
+            if (curLevel == 2)
+            {
+                gameObject.transform.position = startLvl2.position;
+            }
+            else if (curLevel == 3)
+            {
+                gameObject.transform.position = startLvl3.position;
+            }
+            else if (curLevel == 4)
+            {
+                gameObject.transform.position = startLvl4.position;
+            }
+        }
+
+
         isOnGround = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, groundMask); //Checks if you are on a Ground layer object
         isOnDeath = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, deathMask);
         if (isOnGround && velocity.y < 0)
@@ -149,7 +166,8 @@ public class PlayerController : MonoBehaviour
         //Detect and show info on item
         if (ray.transform != null)
         {
-            if (ray.transform.gameObject.CompareTag("Item") && Vector3.Distance(ray.transform.position, gameObject.transform.position) < 4f)
+            //Debug.Log(ray.transform.gameObject.name + " " + Vector3.Distance(ray.point, gameObject.transform.position));
+            if (ray.transform.gameObject.CompareTag("Item") && Vector3.Distance(ray.point, gameObject.transform.position) < 4f)
             {
                 buyableItem = ray.transform.gameObject;
 
@@ -165,6 +183,7 @@ public class PlayerController : MonoBehaviour
         }
         if (buyableItem != null)
         {
+            
             if (buyableItem.name == "Key" || buyableItem.name == "GoldKey")
             {
                 hudText.text = "[E] Take " + buyableItem.name;
