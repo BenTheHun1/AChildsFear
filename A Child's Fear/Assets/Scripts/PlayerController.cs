@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
     public GameObject slingshotObject;
     public Image keyIcon;
     public GameObject keyObject;
+    private Text forceDisplay;
 
 
     private int curLevel = 1;
@@ -54,7 +55,8 @@ public class PlayerController : MonoBehaviour
     {
         defaultHeight = gameObject.GetComponent<CharacterController>().height;
         hudText = GameObject.Find("HUD Text").gameObject.GetComponent<TextMeshProUGUI>();
-
+        forceDisplay = GameObject.Find("Slingshot Force").GetComponent<Text>();
+        forceDisplay.gameObject.SetActive(false);
 
         UpdateUI();
     }
@@ -294,6 +296,7 @@ public class PlayerController : MonoBehaviour
             flashlightObject.SetActive(true);
             slingshotObject.SetActive(false);
             keyObject.SetActive(false);
+            forceDisplay.gameObject.SetActive(false);
         }
         else if (currentItem == 2)
         {
@@ -303,6 +306,7 @@ public class PlayerController : MonoBehaviour
             flashlightObject.SetActive(false);
             slingshotObject.SetActive(true);
             keyObject.SetActive(false);
+            forceDisplay.gameObject.SetActive(true);
         }
         else if (currentItem == 3)
         {
@@ -312,6 +316,7 @@ public class PlayerController : MonoBehaviour
             flashlightObject.SetActive(false);
             slingshotObject.SetActive(false);
             keyObject.SetActive(true);
+            forceDisplay.gameObject.SetActive(false);
         }
     }
 }

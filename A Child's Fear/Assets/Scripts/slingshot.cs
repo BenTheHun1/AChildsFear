@@ -19,9 +19,9 @@ public class slingshot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0) && force <= 5000)
         {
-            force += 1000f * Time.deltaTime;
+            force += 2000f * Time.deltaTime;
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
