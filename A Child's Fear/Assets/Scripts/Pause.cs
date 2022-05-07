@@ -38,13 +38,16 @@ public class Pause : MonoBehaviour
 
     public void ResumeGame()
     {
+        gameObject.GetComponent<AudioSource>().Play();
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     public void LoadScene(string sceneToLoad)
     {
+        gameObject.GetComponent<AudioSource>().Play();
         if (sceneToLoad == "MomTest")
         {
             SceneManager.LoadScene("Main");
@@ -57,6 +60,7 @@ public class Pause : MonoBehaviour
 
     public void QuitGame()
     {
+        gameObject.GetComponent<AudioSource>().Play();
         Application.Quit();
     }
 }
