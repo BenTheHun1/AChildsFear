@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     //Variables
     public CharacterController controller;
     public CameraControllerFPS cc;
+    public Animator anim;
 
     public Transform groundCheck;
     private float groundDistance = 0.2f;
@@ -60,6 +61,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        
         if (gameObject.transform.position.y <-30)
         {
             if (curLevel == 2)
@@ -81,6 +83,11 @@ public class PlayerController : MonoBehaviour
         isOnDeath = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, deathMask);
         if (isOnGround && velocity.y < 0)
         {
+            if (anim.GetBool("jump") == true)
+            {
+                anim.SetBool("jump", false);
+                anim.SetTrigger("land");
+            }
             velocity.y = -2f; //Stops y velocity from infinitely decreasing
         }
 
@@ -92,6 +99,7 @@ public class PlayerController : MonoBehaviour
         controller.Move(move * speed * Time.deltaTime);
 
         velocity.y += gravity * Time.deltaTime;
+        anim.SetFloat("speed", x + z);
 
         /*if (Input.GetButtonDown("Jump") && isOnGround)
         {
@@ -100,12 +108,15 @@ public class PlayerController : MonoBehaviour
         }*/
         if (Input.GetButton("Jump") && isOnGround && jumpHeight < 3f)
         {
+            anim.SetBool("crouching", true);
             jumpPrep = true;
             jumpHeight += 3f * Time.deltaTime;
             desiredHeight -= .5f * Time.deltaTime; 
         }
         if (Input.GetButtonUp("Jump") && isOnGround)
         {
+            anim.SetBool("crouching", false);
+            anim.SetBool("jump", true);
             if (jumpHeight < 1f)
             {
                 jumpHeight = 1f;
