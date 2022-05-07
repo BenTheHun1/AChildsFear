@@ -44,6 +44,11 @@ public class PlayerController : MonoBehaviour
     public Image keyIcon;
     public GameObject keyObject;
 
+
+    private int curLevel = 1;
+    public Transform startLvl2;
+    public Transform startLvl3;
+    public Transform startLvl4;
     void Start()
     {
         defaultHeight = gameObject.GetComponent<CharacterController>().height;
@@ -171,7 +176,7 @@ public class PlayerController : MonoBehaviour
                     Destroy(buyableItem);
                 }
             }
-            else if (buyableItem.name == "Door")
+            else if (buyableItem.name == "door")
             {
                 if (currentItem == 3)
                 {
@@ -181,7 +186,19 @@ public class PlayerController : MonoBehaviour
                         keyIcon.gameObject.SetActive(false);
                         maxItems--;
                         UpdateUI();
-                        Destroy(buyableItem);
+                        curLevel++;
+                        if (curLevel == 2)
+                        {
+                            gameObject.transform.position = startLvl2.position;
+                        }
+                        else if (curLevel == 3)
+                        {
+                            gameObject.transform.position = startLvl3.position;
+                        }
+                        else if (curLevel == 4)
+                        {
+                            gameObject.transform.position = startLvl4.position;
+                        }
                     }
                 }
                 else
@@ -189,16 +206,40 @@ public class PlayerController : MonoBehaviour
                     hudText.text = "Locked";
                 }
             }
-            else if (buyableItem.name == "Button")
+            else if (buyableItem.name == "udoor")
+            {
+                hudText.text = "[E] Open " + buyableItem.name;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    curLevel++;
+                    if (curLevel == 2)
+                    {
+                        gameObject.transform.position = startLvl2.position;
+                    }
+                    else if (curLevel == 3)
+                    {
+                        gameObject.transform.position = startLvl3.position;
+                    }
+                    else if (curLevel == 4)
+                    {
+                        gameObject.transform.position = startLvl4.position;
+                    }
+                }
+            }
+            else if (buyableItem.name == "button2")
             {
                 if (buyableItem.GetComponent<Buttony>().buttonType == Buttony.ButtonType.Hand)
                 {
-                    hudText.text = "[E] Push " + buyableItem.name;
+                    hudText.text = "[E] Push Button";
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         buyableItem.GetComponent<Buttony>().Push();
                     }
                 }
+            }
+            else if (buyableItem.name == "teddybear")
+            {
+                SceneManager.LoadScene("The End");
             }
             
         }
