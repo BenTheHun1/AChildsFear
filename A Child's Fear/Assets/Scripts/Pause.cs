@@ -2,14 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Pause : MonoBehaviour
 {
     public GameObject pauseMenu;
+    private CameraControllerFPS cc;
+    private Slider sense;
 
     // Start is called before the first frame update
     void Start()
     {
+        sense = GameObject.Find("Sensitivity").GetComponent<Slider>();
+        cc = GameObject.Find("Main Camera").GetComponent<CameraControllerFPS>();
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
     }
@@ -58,6 +63,10 @@ public class Pause : MonoBehaviour
         }
     }
 
+    public void changeSense()
+    {
+        cc.mouseSensitivity = sense.value;
+    }
     public void QuitGame()
     {
         gameObject.GetComponent<AudioSource>().Play();
