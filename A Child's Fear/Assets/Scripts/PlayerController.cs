@@ -47,13 +47,34 @@ public class PlayerController : MonoBehaviour
     private Text forceDisplay;
 
 
-    private int curLevel = 1;
+    public int curLevel;
     public Transform startLvl1;
     public Transform startLvl2;
     public Transform startLvl3;
     public Transform startLvl4;
     void Start()
     {
+        controller.enabled = false;
+        if (curLevel == 1)
+        {
+            gameObject.transform.position = startLvl1.position;
+        }
+        if (curLevel == 2)
+        {
+            gameObject.transform.position = startLvl2.position;
+        }
+        else if (curLevel == 3)
+        {
+            gameObject.transform.position = startLvl3.position;
+        }
+        else if (curLevel == 4)
+        {
+            gameObject.transform.position = startLvl4.position;
+        }
+        controller.enabled = true;
+
+
+
         defaultHeight = gameObject.GetComponent<CharacterController>().height;
         hudText = GameObject.Find("HUD Text").gameObject.GetComponent<TextMeshProUGUI>();
         forceDisplay = GameObject.Find("Slingshot Force").GetComponent<Text>();
@@ -66,14 +87,11 @@ public class PlayerController : MonoBehaviour
     {
         isOnGround = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, groundMask); //Checks if you are on a Ground layer object
         isOnDeath = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, deathMask);
-        //Debug.Log(curLevel);
         if (gameObject.transform.position.y <-30 || isOnDeath)
         {
             controller.enabled = false;
             if (curLevel == 1)
             {
-
-                //Debug.Log(gameObject.transform.position + " " + startLvl1.position);
                 gameObject.transform.position = startLvl1.position;
             }
             if (curLevel == 2)
@@ -216,7 +234,7 @@ public class PlayerController : MonoBehaviour
             
             if (buyableItem.name == "Key" || buyableItem.name == "GoldKey")
             {
-                hudText.text = "[E] Take " + buyableItem.name;
+                hudText.text = "[E] Take Key";
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     keyIcon.gameObject.SetActive(true);

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class slingshot : MonoBehaviour
 {
     public GameObject bullet;
+    public Transform spawnpoint;
     private GameObject newestBullet;
     public float force;
     private Text forceDisplay;
@@ -27,7 +28,7 @@ public class slingshot : MonoBehaviour
         {
             if (force > 300)
             {
-                newestBullet = Instantiate(bullet, transform.TransformPoint(Vector3.forward * 2), transform.rotation);
+                newestBullet = Instantiate(bullet, spawnpoint.position, transform.rotation);
                 newestBullet.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * force);
             }
             force = 0;
