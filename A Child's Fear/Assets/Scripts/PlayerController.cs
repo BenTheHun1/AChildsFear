@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
 
     public Transform groundCheck;
-    private float groundDistance = 0.2f;
+    public float groundDistance;
     public LayerMask groundMask;
     public LayerMask deathMask;
 
@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
 
 
     private int curLevel = 1;
+    public Transform startLvl1;
     public Transform startLvl2;
     public Transform startLvl3;
     public Transform startLvl4;
@@ -63,9 +64,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        
-        if (gameObject.transform.position.y <-30)
+        isOnGround = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, groundMask); //Checks if you are on a Ground layer object
+        isOnDeath = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, deathMask);
+        //Debug.Log(curLevel);
+        if (gameObject.transform.position.y <-30 || isOnDeath)
         {
+            controller.enabled = false;
+            if (curLevel == 1)
+            {
+
+                //Debug.Log(gameObject.transform.position + " " + startLvl1.position);
+                gameObject.transform.position = startLvl1.position;
+            }
             if (curLevel == 2)
             {
                 gameObject.transform.position = startLvl2.position;
@@ -78,11 +88,11 @@ public class PlayerController : MonoBehaviour
             {
                 gameObject.transform.position = startLvl4.position;
             }
+            controller.enabled = true;
         }
 
 
-        isOnGround = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, groundMask); //Checks if you are on a Ground layer object
-        isOnDeath = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, deathMask);
+       
         if (isOnGround && velocity.y < 0)
         {
             if (anim.GetBool("jump") == true)
@@ -152,7 +162,7 @@ public class PlayerController : MonoBehaviour
         }*/
         controller.height = Mathf.Lerp(controller.height, desiredHeight, 0.1f);
 
-        if (Input.GetKeyDown(KeyCode.R) || isOnDeath)
+        if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

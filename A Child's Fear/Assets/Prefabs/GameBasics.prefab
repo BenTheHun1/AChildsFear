@@ -2745,7 +2745,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9118054994425804644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.31, y: 4.66, z: -134.13}
+  m_LocalPosition: {x: 5.25, y: 4.66, z: -117.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9118054993696303932}
@@ -2789,6 +2789,7 @@ MonoBehaviour:
   cc: {fileID: 9118054993696303935}
   anim: {fileID: 5866666021865545247}
   groundCheck: {fileID: 0}
+  groundDistance: 0.2
   groundMask:
     serializedVersion: 2
     m_Bits: 2048
@@ -2798,7 +2799,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isOnGround: 1
   isOnDeath: 0
-  desiredHeight: 0
+  desiredHeight: 2
   buyableItem: {fileID: 0}
   flashlightIcon: {fileID: 4794404250182487511}
   flashlightObject: {fileID: 2871220026197166568}
@@ -2806,6 +2807,7 @@ MonoBehaviour:
   slingshotObject: {fileID: 7574411598738764116}
   keyIcon: {fileID: 5862657309676592972}
   keyObject: {fileID: 3419818173127739833}
+  startLvl1: {fileID: 0}
   startLvl2: {fileID: 0}
   startLvl3: {fileID: 0}
   startLvl4: {fileID: 0}
