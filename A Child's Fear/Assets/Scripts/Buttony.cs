@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Buttony : MonoBehaviour
 {
-    [Tooltip("Platform to modify the condition of.")]
+    [Tooltip("Platform to modify the condition of. Only define a Platform OR a Bridge, not both.")]
     public MovePlatform connectedPlatform;
+    [Tooltip("Bridge to modify the condition of. Only define a Platform OR a Bridge, not both.")]
+    public drawbridge connectedBridge;
     [Tooltip("If true, button has been pressed and no longer functions.")]
     public bool beenPressed;
     [Tooltip("The type of Button.\nHand must be pushed with [E].\nBullet must be fired at.\nEither is anything.")]
@@ -26,7 +28,14 @@ public class Buttony : MonoBehaviour
     {
         if (!beenPressed)
         {
-            connectedPlatform.currentValue++;
+            if (connectedPlatform != null)
+            {
+                connectedPlatform.currentValue++;
+            }
+            else if (connectedBridge != null)
+            {
+                connectedBridge.currentValue++;
+            }
             beenPressed = true;
         }
     }
