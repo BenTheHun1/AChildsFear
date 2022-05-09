@@ -513,6 +513,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 808783628831990541, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 808783628831990541, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 808783628831990541, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 2619396057298500088, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
       propertyPath: m_Name
       value: GameBasics
@@ -540,6 +552,18 @@ PrefabInstance:
     - target: {fileID: 3317889893623617985, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238302701127479545, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238302701127479545, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.342
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238302701127479545, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.547
       objectReference: {fileID: 0}
     - target: {fileID: 4485217548413071670, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
       propertyPath: m_AnchorMax.y
@@ -641,6 +665,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8786274550121265195, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -70.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9118054994425804646, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.45
@@ -655,6 +683,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+--- !u!1 &780184266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3574355576361609795, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+  m_PrefabInstance: {fileID: 636164778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &780184269
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780184266}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d17b065b5052e3949bcc56de46d9bd0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &793094540 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8501649271042907436, guid: 542ff0410aefae445841ba5fb23bfee5, type: 3}
@@ -913,9 +965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec55ffea0b1a69645a9eed053b17f1b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputAxis: 0
-  inputNextValueOnAxis: -2.07
-  speed: 1
 --- !u!1 &1993470510 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6939775969730935780, guid: 8833acbec35131b4c9746ab8e00e848b, type: 3}
@@ -933,9 +982,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec55ffea0b1a69645a9eed053b17f1b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputAxis: 2
-  inputNextValueOnAxis: 5
-  speed: 1.1
 --- !u!54 &1993470512
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1097,6 +1143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectedPlatform: {fileID: 503922556}
+  connectedBridge: {fileID: 0}
   beenPressed: 0
   buttonType: 0
 --- !u!1 &2087800564 stripped
