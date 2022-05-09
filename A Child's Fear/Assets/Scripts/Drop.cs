@@ -17,10 +17,26 @@ public class Drop : MonoBehaviour
     public bool isCurrentlyDropping;
     private float newPos;
     private Vector3 startPos;
-
+    [Tooltip("Input this Dropping platforms pair, if desired. Don't define the partner of the other Dropping platform.")]
+    public Drop partner;
+    public float rand;
     // Start is called before the first frame update
     void Start()
     {
+        if (partner != null)
+        {
+            //Debug.Log(Random.Range(0, 2));
+            rand = Random.Range(0, 2);
+            if (rand < 0.5f)
+            {
+                partner.enabled = false;
+            }
+            else
+            {
+                this.enabled = false;
+            }
+        }
+
         startPos = gameObject.transform.position;
     }
 

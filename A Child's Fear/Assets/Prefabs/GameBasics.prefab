@@ -3262,7 +3262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9118054994425804644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.69, y: -1.21, z: 66.23}
+  m_LocalPosition: {x: -1.69, y: 5.14, z: -134}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9118054993696303932}
@@ -3324,7 +3324,7 @@ MonoBehaviour:
   slingshotObject: {fileID: 3872481578377917725}
   keyIcon: {fileID: 5862657309676592972}
   keyObject: {fileID: 3419818173127739833}
-  curLevel: 0
+  curLevel: 1
   startLvl1: {fileID: 0}
   startLvl2: {fileID: 0}
   startLvl3: {fileID: 0}
