@@ -54,6 +54,27 @@ public class PlayerController : MonoBehaviour
     public Transform startLvl4;
     void Start()
     {
+        respawn();
+
+        defaultHeight = gameObject.GetComponent<CharacterController>().height;
+        hudText = GameObject.Find("HUD Text").gameObject.GetComponent<TextMeshProUGUI>();
+        forceDisplay = GameObject.Find("Slingshot Force").GetComponent<Text>();
+        forceDisplay.gameObject.SetActive(false);
+
+        UpdateUI();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+        if (collision.collider.gameObject.CompareTag("Knife"))
+        {
+            respawn();
+        }
+    }
+
+    private void respawn()
+    {
         controller.enabled = false;
         if (curLevel == 1)
         {
@@ -72,15 +93,6 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.position = startLvl4.position;
         }
         controller.enabled = true;
-
-
-
-        defaultHeight = gameObject.GetComponent<CharacterController>().height;
-        hudText = GameObject.Find("HUD Text").gameObject.GetComponent<TextMeshProUGUI>();
-        forceDisplay = GameObject.Find("Slingshot Force").GetComponent<Text>();
-        forceDisplay.gameObject.SetActive(false);
-
-        UpdateUI();
     }
 
     void Update()
@@ -89,28 +101,9 @@ public class PlayerController : MonoBehaviour
         isOnDeath = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, deathMask);
         if (gameObject.transform.position.y <-30 || isOnDeath)
         {
-            controller.enabled = false;
-            if (curLevel == 1)
-            {
-                gameObject.transform.position = startLvl1.position;
-            }
-            if (curLevel == 2)
-            {
-                gameObject.transform.position = startLvl2.position;
-            }
-            else if (curLevel == 3)
-            {
-                gameObject.transform.position = startLvl3.position;
-            }
-            else if (curLevel == 4)
-            {
-                gameObject.transform.position = startLvl4.position;
-            }
-            controller.enabled = true;
+            respawn();
         }
 
-
-       
         if (isOnGround && velocity.y < 0)
         {
             if (anim.GetBool("jump") == true)

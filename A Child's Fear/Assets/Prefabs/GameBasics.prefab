@@ -3324,7 +3324,7 @@ MonoBehaviour:
   slingshotObject: {fileID: 3872481578377917725}
   keyIcon: {fileID: 5862657309676592972}
   keyObject: {fileID: 3419818173127739833}
-  curLevel: 4
+  curLevel: 0
   startLvl1: {fileID: 0}
   startLvl2: {fileID: 0}
   startLvl3: {fileID: 0}
