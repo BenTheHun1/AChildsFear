@@ -333,7 +333,11 @@ public class PlayerController : MonoBehaviour
             }
             else if (buyableItem.name == "teddybear")
             {
-                SceneManager.LoadScene("The End");
+                hudText.text = "[E] Cherish";
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    SceneManager.LoadScene("The End");
+                }
             }
             
         }

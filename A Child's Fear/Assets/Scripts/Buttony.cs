@@ -36,6 +36,7 @@ public class Buttony : MonoBehaviour
             {
                 connectedBridge.currentValue++;
             }
+            gameObject.GetComponent<AudioSource>().Play();
             beenPressed = true;
         }
     }
