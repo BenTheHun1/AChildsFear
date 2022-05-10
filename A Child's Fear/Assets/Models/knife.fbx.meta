@@ -3,7 +3,17 @@ guid: 542ff0410aefae445841ba5fb23bfee5
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: knife blade mat
+    second: {fileID: 2100000, guid: 57f4e662580c37146897c13f2ecdde3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: knife handle mat
+    second: {fileID: 2100000, guid: df8022be548a66b4ebf4b507fdda3dad, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

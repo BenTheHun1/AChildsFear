@@ -3,7 +3,57 @@ guid: 69995a09f1c15654aa1ce24b57520a24
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L cabinet bolt 2 mat
+    second: {fileID: 2100000, guid: 6263b26643c8a2c40ad78fc233ce8c80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L cabinet bolt mat
+    second: {fileID: 2100000, guid: 6263b26643c8a2c40ad78fc233ce8c80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L cabinet bottom mat
+    second: {fileID: 2100000, guid: df8022be548a66b4ebf4b507fdda3dad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L cabinet door 2 mat
+    second: {fileID: 2100000, guid: df8022be548a66b4ebf4b507fdda3dad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L cabinet door mat
+    second: {fileID: 2100000, guid: df8022be548a66b4ebf4b507fdda3dad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L cabinet handle 2 mat
+    second: {fileID: 2100000, guid: 6263b26643c8a2c40ad78fc233ce8c80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L cabinet handle mat
+    second: {fileID: 2100000, guid: 6263b26643c8a2c40ad78fc233ce8c80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L cabinet mat
+    second: {fileID: 2100000, guid: df8022be548a66b4ebf4b507fdda3dad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L cabinet shelf mat
+    second: {fileID: 2100000, guid: df8022be548a66b4ebf4b507fdda3dad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: L cabinet top mat
+    second: {fileID: 2100000, guid: ae29a3ee62b2c9645a4b42df1da371bc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
