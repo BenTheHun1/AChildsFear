@@ -21,7 +21,8 @@ public class Drop : MonoBehaviour
     private Vector3 startPos;
     [Tooltip("Input this Dropping platforms pair, if desired. Don't define the partner of the other Dropping platform.")]
     public Drop partner;
-    public float rand;
+    private float rand;
+    private Transform away;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +39,7 @@ public class Drop : MonoBehaviour
                 this.enabled = false;
             }
         }
-
+        away = GameObject.Find("away").transform;
         startPos = gameObject.transform.position;
         waitTimeDef = waitTime;
         despawnTimeDef = despawnTime;
@@ -59,6 +60,7 @@ public class Drop : MonoBehaviour
                 {
                     gameObject.GetComponent<Collider>().enabled = false;
                     //gameObject.GetComponent<MeshRenderer>().enabled = false;
+                    gameObject.transform.position = away.position;
                     isCurrentlyDropping = false;
                     StartCoroutine("Respawn");
                 }

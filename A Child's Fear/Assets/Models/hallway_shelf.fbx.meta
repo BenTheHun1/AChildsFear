@@ -3,7 +3,22 @@ guid: 14e95ce9670f5fb4c90c49f999da3973
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hallway shelf main mat
+    second: {fileID: 2100000, guid: 277a094156dfa6640bef43801613974e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hallway shelf stand mat
+    second: {fileID: 2100000, guid: 189650f1d603d3749bd4609b9d8ff715, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hallway shelf top mat
+    second: {fileID: 2100000, guid: bb1e42be346684c438cb19221e3657ff, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

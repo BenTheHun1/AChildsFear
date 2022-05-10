@@ -3,7 +3,32 @@ guid: 397717925c7e71941b4513e4dcfcfa23
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: microwave door mat
+    second: {fileID: 2100000, guid: d0a9d2a5a62532641b50761ed1d695b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: microwave front mat
+    second: {fileID: 2100000, guid: 9d5f42997896ab24bbc00f5a94aed590, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: microwave handle mat
+    second: {fileID: 2100000, guid: 1e7cde8c9893e1a448066127470eab84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: microwave main mat
+    second: {fileID: 2100000, guid: 8d5803b301fcacd41abf377bddadfe5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: microwave screen mat
+    second: {fileID: 2100000, guid: d4f2cc198a8d4834394e3e5b4d3e6449, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
