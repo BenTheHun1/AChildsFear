@@ -3,7 +3,12 @@ guid: ea5eb13125eadcb47826cac124a67cd9
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flour mat
+    second: {fileID: 2100000, guid: 05370784819cfd34d9487000280869bd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

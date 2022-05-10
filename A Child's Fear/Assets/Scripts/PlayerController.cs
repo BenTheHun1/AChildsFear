@@ -115,6 +115,10 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.transform.position = startLvl4.position;
         }
+        else if (curLevel == 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
         controller.enabled = true;
     }
 
@@ -224,10 +228,10 @@ public class PlayerController : MonoBehaviour
         }*/
         controller.height = Mathf.Lerp(controller.height, desiredHeight, 0.1f);
 
-        if (Input.GetKeyDown(KeyCode.R))
+        /*if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        }*/
 
         if (Input.mouseScrollDelta.y < 0 && Time.timeScale == 1)
         {
@@ -291,7 +295,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (currentItem == 3)
                 {
-                    hudText.text = "[E] Open " + buyableItem.name;
+                    hudText.text = "[E] Open Door";
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         keys.Play();
@@ -313,7 +317,7 @@ public class PlayerController : MonoBehaviour
             }
             else if (buyableItem.name == "udoor")
             {
-                hudText.text = "[E] Open " + buyableItem.name;
+                hudText.text = "[E] Open Door";
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     curLevel++;
