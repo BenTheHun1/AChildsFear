@@ -3,7 +3,57 @@ guid: 8c516f965bfebe64fadd6995817c271c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet bottom mat
+    second: {fileID: 2100000, guid: f8d7a7851ab2d624c89ad047bc4e7898, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet door 2 mat_
+    second: {fileID: 2100000, guid: 9f87afde41ad0b54dba6afddcac875e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet door 3 mat
+    second: {fileID: 2100000, guid: 78b1ff5e27e6c444bb0384bd0a89b3c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet door 4 mat
+    second: {fileID: 2100000, guid: c8b381fa59f26f842a4bda56b98d93f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet door mat
+    second: {fileID: 2100000, guid: 814e928b1f444c04c81138c118fe9b81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet handle mat
+    second: {fileID: 2100000, guid: 70c3a6a78024cfc4fa5190f5acae313a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet handle peg mat
+    second: {fileID: 2100000, guid: d19f693206d1bbf4fb6e7034e70a6f2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet main mat
+    second: {fileID: 2100000, guid: ae00d894563012b47b6c802b4e65a4fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet middle mat
+    second: {fileID: 2100000, guid: f53413a29236e86448240091bf7b61d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet top mat
+    second: {fileID: 2100000, guid: 8b642d0547e66bf49a15127c94303c0d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

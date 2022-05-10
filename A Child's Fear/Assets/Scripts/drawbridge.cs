@@ -19,7 +19,7 @@ public class drawbridge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(gameObject.transform.eulerAngles.x);
+        //Debug.Log(gameObject.transform.eulerAngles.x);
         if (currentValue >= requiredValue && gameObject.transform.eulerAngles.x < 58f)
         {
             gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x + speed * Time.deltaTime, gameObject.transform.eulerAngles.y, gameObject.transform.eulerAngles.z);

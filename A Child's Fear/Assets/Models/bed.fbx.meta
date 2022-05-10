@@ -3,7 +3,67 @@ guid: cff984db9149caa46880024dad3b9f34
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bedframe mat
+    second: {fileID: 2100000, guid: b575e3d83f749cf42b65da1934ab47e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bedpost 1 mat
+    second: {fileID: 2100000, guid: 25ea9f136fab0db409b4b9d5ed00b6e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bedpost 2 mat
+    second: {fileID: 2100000, guid: e24a0eb0ff4fd094fa4fbc649c0c2131, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bedpost 3 mat
+    second: {fileID: 2100000, guid: c209484c7bacc5e4b9f6a785bf67efe9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bedpost 4 mat
+    second: {fileID: 2100000, guid: 8224d7aca78603e42aff35799945e870, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blanket mat
+    second: {fileID: 2100000, guid: aee2fd32ab0da064986825c7df89eec1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: endboard bottom mat
+    second: {fileID: 2100000, guid: b8b46928295640f409a0939511e9930c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: endboard top mat
+    second: {fileID: 2100000, guid: 370574620de2f234297189321ea30251, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: headboard bottom mat
+    second: {fileID: 2100000, guid: 9edca23675398ba47ad0974d724869f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: headboard top mat
+    second: {fileID: 2100000, guid: c76dce437c4c4ec4e800b068c82b666c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mattress mat
+    second: {fileID: 2100000, guid: 346b28d9a4273ed4ab9af8c343d0ebd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pillow mat
+    second: {fileID: 2100000, guid: 0fcedc645d02b464d95f869b1d43dcb4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

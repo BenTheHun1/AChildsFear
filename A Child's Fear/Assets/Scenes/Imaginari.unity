@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -1883,7 +1883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -2658,7 +2658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -3411,7 +3411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -4965,7 +4965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 4
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -5920,49 +5920,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 47f08ec88c471de47a8d0fd60d2f4940, type: 3}
   m_PrefabInstance: {fileID: 315107162}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &315107164 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 111652090282609938, guid: 47f08ec88c471de47a8d0fd60d2f4940, type: 3}
-  m_PrefabInstance: {fileID: 315107162}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &315107165 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -2717426449175293857, guid: 47f08ec88c471de47a8d0fd60d2f4940, type: 3}
-  m_PrefabInstance: {fileID: 315107162}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &315107166 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 47f08ec88c471de47a8d0fd60d2f4940, type: 3}
   m_PrefabInstance: {fileID: 315107162}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &315107167
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315107164}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2352791587416534434, guid: 47f08ec88c471de47a8d0fd60d2f4940, type: 3}
---- !u!64 &315107168
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315107165}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6207562368753282259, guid: 47f08ec88c471de47a8d0fd60d2f4940, type: 3}
 --- !u!114 &315107169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5975,7 +5937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 4
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -10776,7 +10738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -13506,7 +13468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 4
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -13631,7 +13593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -14990,7 +14952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -15143,6 +15105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 791102298}
+  - component: {fileID: 791102299}
   m_Layer: 0
   m_Name: start1
   m_TagString: Untagged
@@ -15164,6 +15127,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &791102299
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791102297}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2ed1eb3a5b55e5242bc8ba51beb52ce6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &792610050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17634,6 +17693,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9118054994425804646, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -131.866
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118054994425804664, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
+      propertyPath: curLevel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9118054994425804664, guid: 63e0a3f3d61f9894ca6c1de66228be54, type: 3}
       propertyPath: startLvl1
       value: 
@@ -17938,9 +18005,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 4
   fallSpeed: 3
-  despawnTime: -5
+  despawnTime: 5
   respawnTime: 3
   isCurrentlyDropping: 0
   partner: {fileID: 0}
@@ -18151,7 +18218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 5
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -20304,7 +20371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -24191,11 +24258,11 @@ Transform:
   - {fileID: 532907119}
   - {fileID: 740183558}
   - {fileID: 198007992}
+  - {fileID: 8481175913050372254}
   - {fileID: 812930900}
   - {fileID: 266059448}
   - {fileID: 255184865}
   - {fileID: 325258214}
-  - {fileID: 8481175913050372254}
   - {fileID: 319019276}
   - {fileID: 1572162443}
   - {fileID: 755803586}
@@ -25826,7 +25893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -27359,10 +27426,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 0
-  fallSpeed: 0
-  despawnTime: 0
-  respawnTime: 0
+  waitTime: 4
+  fallSpeed: 3
+  despawnTime: 5
+  respawnTime: 3
   isCurrentlyDropping: 0
   partner: {fileID: 0}
   rand: 0
@@ -28605,7 +28672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 4
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 2
@@ -28921,7 +28988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -29255,6 +29322,7 @@ Transform:
   - {fileID: 601610741}
   - {fileID: 1043747610}
   - {fileID: 1501745355}
+  - {fileID: 6724740330068439740}
   - {fileID: 1943488578}
   - {fileID: 1724762478}
   - {fileID: 498688188}
@@ -29281,7 +29349,6 @@ Transform:
   - {fileID: 1421606027}
   - {fileID: 1928606643}
   - {fileID: 996956514}
-  - {fileID: 6724740330068439740}
   - {fileID: 718333512}
   - {fileID: 1847125634}
   - {fileID: 894926160}
@@ -32570,7 +32637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 4
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -35441,7 +35508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 6
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -36341,7 +36408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef57722eb6170429e461a1367e73b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 8
+  waitTime: 4
   fallSpeed: 3
   despawnTime: 5
   respawnTime: 3
@@ -37627,7 +37694,7 @@ Transform:
   - {fileID: 21474080}
   - {fileID: 6724740329851257963}
   m_Father: {fileID: 1698524717}
-  m_RootOrder: 40
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!54 &7203923515357846336
 Rigidbody:
@@ -38176,7 +38243,7 @@ Transform:
   - {fileID: 7499137569730413049}
   - {fileID: 8481175913286372937}
   m_Father: {fileID: 1297051505}
-  m_RootOrder: 44
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: -0.317, y: 37.772, z: -90.403}
 --- !u!1 &8481175913286372936
 GameObject:

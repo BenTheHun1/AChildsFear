@@ -3,7 +3,12 @@ guid: 9f986cd2bb3a50744b3984c0339af6d1
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ceiling mat
+    second: {fileID: 2100000, guid: 888d5c614f8317f4b96d0a2bd34ec491, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

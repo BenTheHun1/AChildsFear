@@ -3,7 +3,37 @@ guid: 50635fad3982aab4381a15d35a5b5200
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cabinet door bottom left mat
+    second: {fileID: 2100000, guid: a124e72556f754740b57beb036f274c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cabinet door top left mat
+    second: {fileID: 2100000, guid: 316a0c3b41b0c4e48accfc1abc29d3de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cabinet main mat
+    second: {fileID: 2100000, guid: 39045387de6d49c49ac3837e8504273e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cabinet top mat
+    second: {fileID: 2100000, guid: b7d07bf3c9e758747b04cca66e5038d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet handle mat
+    second: {fileID: 2100000, guid: 6263b26643c8a2c40ad78fc233ce8c80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: closet handle peg mat
+    second: {fileID: 2100000, guid: f73725d7fbaafca4195ce3cbb1561e7f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,27 @@ guid: c39f09948e202c048a4128bc8911d557
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair arm rests mat
+    second: {fileID: 2100000, guid: 6ec069edec1b7764da589d04c38d0b47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair cushion mat
+    second: {fileID: 2100000, guid: 3dd455a45e7cc8449ba581f07b6eef59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair legs mat
+    second: {fileID: 2100000, guid: 3a28b30f5c10a944892e93eb6ab9fdef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair mat
+    second: {fileID: 2100000, guid: 311c21aca27184748b8ae89a42c1db9a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
