@@ -3,7 +3,32 @@ guid: 93697304b91135a458852fd6beac5401
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: couch arm rests mat
+    second: {fileID: 2100000, guid: 20961a8aae27311499763acb4dcac157, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: couch cushion 2 mat
+    second: {fileID: 2100000, guid: 02f5fa6683701a349aee5bbfa3168046, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: couch cushion mat
+    second: {fileID: 2100000, guid: 768c2237a17327948b7173428de2bd4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: couch legs mat
+    second: {fileID: 2100000, guid: 431b6794acf453a4c90677a6358deaa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: couch mat
+    second: {fileID: 2100000, guid: ad327c57fa099da41a60065a8e5efe30, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

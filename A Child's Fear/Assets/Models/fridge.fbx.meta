@@ -3,7 +3,42 @@ guid: ef45d0b2c9a5f4a4abf8ae3775fe13d1
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fridge freezer border mat
+    second: {fileID: 2100000, guid: 9087f542a567dc14cbda9cf990e4fc4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fridge freezer handle mat
+    second: {fileID: 2100000, guid: 9f60c1a9659937d4c9c405e77504ef93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fridge freezer mat
+    second: {fileID: 2100000, guid: 97b0277605a76f94b9cb3b67fa6abea2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fridge main mat
+    second: {fileID: 2100000, guid: d8decc74b1103884182c370755755af0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fridge reg border mat
+    second: {fileID: 2100000, guid: 852b559ca9802154bb50592c2eacaae4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fridge reg handle mat
+    second: {fileID: 2100000, guid: d2f4d7d2609bbf445b4e968d7e5ab172, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fridge regular mat
+    second: {fileID: 2100000, guid: 5e7fa1aed7b9ee14fa30667e51ca4ce4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

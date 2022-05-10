@@ -3,7 +3,122 @@ guid: f712fea808a41534ca74dba716e1582c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove bottom mat
+    second: {fileID: 2100000, guid: 57f4e662580c37146897c13f2ecdde3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove button 1 mat
+    second: {fileID: 2100000, guid: cd4bee2fadf22e046aee0d12dc6fc7d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove button 2 mat
+    second: {fileID: 2100000, guid: f748962547964d8428b1302d64872bcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove door mat
+    second: {fileID: 2100000, guid: 264d9c12303d17c41bd6daa67f1014bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove gas range 2 mat
+    second: {fileID: 2100000, guid: ea047cdf9461d2b49aed82e9fe1aa286, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove gas range mat
+    second: {fileID: 2100000, guid: 9bb272a34ba46ff4b9731aa2c4da48ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove glass mat
+    second: {fileID: 2100000, guid: 00d4d200adecfc842a50ec35d4b91239, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove grate mat
+    second: {fileID: 2100000, guid: 6f204e92768eec54db2022d495c50583, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove grate part 1 mat
+    second: {fileID: 2100000, guid: 879a1aeb42d03c54cab06812039bf266, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove grate part 2 mat
+    second: {fileID: 2100000, guid: b6ebd3ed79f6d54489764ddacc490c68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove grate part 3 mat
+    second: {fileID: 2100000, guid: dd72df613ba0dc84f9570f348f04dd09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove grate part 4 mat
+    second: {fileID: 2100000, guid: bafbacb6d012f1b4a83d365f597a5560, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove handle bolt mat
+    second: {fileID: 2100000, guid: 5101a366e75d164408aaf59fc52bc1b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove handle mat
+    second: {fileID: 2100000, guid: 559ff8870a878ef499f035dd0e1ea37a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove knob 1 mat
+    second: {fileID: 2100000, guid: 5cfdd6abfa5b15141b0d98f8683887d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove knob 2 mat
+    second: {fileID: 2100000, guid: 4d531866bb568b348a6e28a58eab59e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove knob 3 mat
+    second: {fileID: 2100000, guid: 5b900a028161d914cbeb84a6c7141404, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove knob 4 mat
+    second: {fileID: 2100000, guid: 2b98dc537f32aff458103dc0850b212b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove knob 5 mat
+    second: {fileID: 2100000, guid: ac4bd218f2032f344845598dd8d20829, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove main mat
+    second: {fileID: 2100000, guid: 927c05f9191178b42902f74a9a04aa0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove mid mat
+    second: {fileID: 2100000, guid: 4b34f6e85f0fb5c44852ebb79289f8b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove top mat
+    second: {fileID: 2100000, guid: 06d0f8bf7914efa429d8170f7514b197, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stove top switch area mat
+    second: {fileID: 2100000, guid: 75923b2fae4db9d4db8196b05352a39d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

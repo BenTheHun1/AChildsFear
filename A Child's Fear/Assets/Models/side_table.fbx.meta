@@ -3,7 +3,57 @@ guid: d14cf347cd1264b4884516db835e91bb
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side table base mat
+    second: {fileID: 2100000, guid: 921df9a0a074e7a4eb78b217140b9b66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side table drawer bottom mat
+    second: {fileID: 2100000, guid: b4e006e3c2b5a3444871b1d79298fab5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side table drawer top mat
+    second: {fileID: 2100000, guid: a489f02fb89fcff4bb6e8a64dca35e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side table handle 2 mat
+    second: {fileID: 2100000, guid: d219d2ec623abcf4694972640730e3a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side table handle mat
+    second: {fileID: 2100000, guid: a7a4eb825ac652244afde63b3a151425, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side table knob 2 mat_
+    second: {fileID: 2100000, guid: 9ac8a2cc6cfbfbf4d80b69f3f3d9b4a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side table knob 3 mat
+    second: {fileID: 2100000, guid: 2914dc14b4b1ccc4682506fda03ff6ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side table knob 4 mat
+    second: {fileID: 2100000, guid: 8f16b8dac9050614f9422ae2b1592f2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side table knob mat
+    second: {fileID: 2100000, guid: 0e3b2226ab27b8f429b1c496564cc3cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side table mat
+    second: {fileID: 2100000, guid: f1cf87a6e38f1d946959a1846c165444, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

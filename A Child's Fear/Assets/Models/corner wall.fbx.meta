@@ -3,7 +3,22 @@ guid: 2e063519151f46547a748d0c4a5f82dd
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corner wall baseboard mat
+    second: {fileID: 2100000, guid: 7d94a23b133a9fa4e834e81c4b778b04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corner wall crowning mat
+    second: {fileID: 2100000, guid: ee878794c523a5a479fce024a5686499, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corner wall mat
+    second: {fileID: 2100000, guid: b1b057d520db14543a4e5684dc58758d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

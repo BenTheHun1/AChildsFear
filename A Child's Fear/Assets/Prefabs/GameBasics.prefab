@@ -3281,7 +3281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9118054994425804644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.69, y: 5.27, z: -135.68}
+  m_LocalPosition: {x: -1.69, y: 5.27, z: -133.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9118054993696303932}
@@ -3887,6 +3887,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9956cca22e2e6c9438051071be355b1e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c64e0d3df9b99ed4eb5f140691fbc81c, type: 2}
     - target: {fileID: 919132149155446097, guid: 9956cca22e2e6c9438051071be355b1e, type: 3}
       propertyPath: m_Name
       value: flashlight

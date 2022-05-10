@@ -3,7 +3,12 @@ guid: 69cc941a2f47257429cc37ac4501e267
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor mat
+    second: {fileID: 2100000, guid: d062c780d96980945b2901a38a08267d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,37 @@ guid: 1ef849fb2455a6446be7f8456e5b8a8a
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stair front mat
+    second: {fileID: 2100000, guid: e6fb3132835565c47a741b514e92c988, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stair handrail mat
+    second: {fileID: 2100000, guid: 5b96749092b433640b32546d90ee6cef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stair reg banister mat
+    second: {fileID: 2100000, guid: 9c0bb7aa77d131b46b63bc80a9362d67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stair side L mat
+    second: {fileID: 2100000, guid: 89b06e8b3d4016b41854d3e6f3667637, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stair side R mat
+    second: {fileID: 2100000, guid: f261dd50584db0648a63af59cd5f8cd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stair step mat
+    second: {fileID: 2100000, guid: 7f66bc62c83d9b24ca0d96707688ad44, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

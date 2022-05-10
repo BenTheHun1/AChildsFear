@@ -3,7 +3,32 @@ guid: 8e0d62a5a2ec3d34b807ae861b1f9a85
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door wall crowning mat
+    second: {fileID: 2100000, guid: 378de203cb78cdc4c97d6f3757821b00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door wall mat
+    second: {fileID: 2100000, guid: a11db4041c4b4a849b0636ac32d7c6e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_mat
+    second: {fileID: 2100000, guid: 0b7a0804a0c44b043a70be9f0af67016, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: doorframe mat
+    second: {fileID: 2100000, guid: ca3420ee3877ad7468c21e1390c51e16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: doorknob mat
+    second: {fileID: 2100000, guid: f5fb4b382b30dfa449372f08cddc823e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

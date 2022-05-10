@@ -3,7 +3,42 @@ guid: c08c40b51955ec54481e028ff513c66f
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen island beam mat
+    second: {fileID: 2100000, guid: 94d34dfbf1968d6469280af9b617cecb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen island faucet handle 2 mat
+    second: {fileID: 2100000, guid: a6adf1ae05b0be24db874d5fd49590d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen island faucet handle mat
+    second: {fileID: 2100000, guid: 2d8837b6c9eb0d542a3b852f3c5c9193, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen island faucet mat
+    second: {fileID: 2100000, guid: 36748865b98ad5b40bebea4da1ba74aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen island main mat
+    second: {fileID: 2100000, guid: 0906c489f92c4144190c7c0a4fb7abf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen island sink mat
+    second: {fileID: 2100000, guid: 7dd12f09b15a4234aaebc0e1e8d9d34f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen island top mat
+    second: {fileID: 2100000, guid: ae29a3ee62b2c9645a4b42df1da371bc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

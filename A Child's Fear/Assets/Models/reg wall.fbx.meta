@@ -3,7 +3,22 @@ guid: d3e9143636b5dce44b0f2c988f37c9b4
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: reg wall baseboard mat
+    second: {fileID: 2100000, guid: 614d2e8bd4d74c045a720739c2b410a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: reg wall crowning mat
+    second: {fileID: 2100000, guid: 1ce4b4f1b6882fa4a9a2cdc55cb751e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: reg wall mat
+    second: {fileID: 2100000, guid: 802d40a68f5fbd349a24738f074c8302, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
