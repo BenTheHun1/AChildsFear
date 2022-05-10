@@ -52,6 +52,15 @@ public class PlayerController : MonoBehaviour
     public Transform startLvl2;
     public Transform startLvl3;
     public Transform startLvl4;
+
+    public AudioSource keys;
+    public AudioSource open;
+    public AudioSource close;
+    private bool doorOpening;
+    public AudioSource step;
+    public AudioClip[] steps;
+    public bool isMoving;
+
     void Start()
     {
         respawn();
@@ -60,8 +69,22 @@ public class PlayerController : MonoBehaviour
         hudText = GameObject.Find("HUD Text").gameObject.GetComponent<TextMeshProUGUI>();
         forceDisplay = GameObject.Find("Slingshot Force").GetComponent<Text>();
         forceDisplay.gameObject.SetActive(false);
-
+        StartCoroutine(Steps());
         UpdateUI();
+    }
+
+    IEnumerator Steps()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.5f);
+            if (isMoving)
+            {
+                int rand = Random.Range(0, steps.Length);
+                step.PlayOneShot(steps[rand]);
+            }
+        }
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -95,6 +118,27 @@ public class PlayerController : MonoBehaviour
         controller.enabled = true;
     }
 
+    IEnumerator OpenDoor()
+    {
+        doorOpening = true;
+        yield return new WaitForSeconds(5.1f);
+        open.Play();
+        yield return new WaitForSeconds(1.1f);
+        close.Play();
+        respawn();
+        doorOpening = false;
+    }
+
+    IEnumerator OpenDoorU()
+    {
+        doorOpening = true;
+        open.Play();
+        yield return new WaitForSeconds(1.1f);
+        close.Play();
+        respawn();
+        doorOpening = false;
+    }
+
     void Update()
     {
         isOnGround = Physics.CheckSphere(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - desiredHeight / 2, gameObject.transform.position.z), groundDistance, groundMask); //Checks if you are on a Ground layer object
@@ -118,7 +162,14 @@ public class PlayerController : MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * x + transform.forward * z;
-
+        if (x + z != 0 && isOnGround)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
         controller.Move(move * speed * Time.deltaTime);
 
         velocity.y += gravity * Time.deltaTime;
@@ -243,23 +294,17 @@ public class PlayerController : MonoBehaviour
                     hudText.text = "[E] Open " + buyableItem.name;
                     if (Input.GetKeyDown(KeyCode.E))
                     {
+                        keys.Play();
                         keyIcon.gameObject.SetActive(false);
                         maxItems--;
                         UpdateUI();
                         curLevel++;
-                        if (curLevel == 2)
-                        {
-                            gameObject.transform.position = startLvl2.position;
-                        }
-                        else if (curLevel == 3)
-                        {
-                            gameObject.transform.position = startLvl3.position;
-                        }
-                        else if (curLevel == 4)
-                        {
-                            gameObject.transform.position = startLvl4.position;
-                        }
+                        StartCoroutine(OpenDoor());
                     }
+                }
+                else if (doorOpening)
+                {
+                    hudText.text = "";
                 }
                 else
                 {
@@ -272,18 +317,7 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     curLevel++;
-                    if (curLevel == 2)
-                    {
-                        gameObject.transform.position = startLvl2.position;
-                    }
-                    else if (curLevel == 3)
-                    {
-                        gameObject.transform.position = startLvl3.position;
-                    }
-                    else if (curLevel == 4)
-                    {
-                        gameObject.transform.position = startLvl4.position;
-                    }
+                    StartCoroutine(OpenDoorU());
                 }
             }
             else if (buyableItem.name == "button2")
@@ -348,5 +382,3 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
-
-
