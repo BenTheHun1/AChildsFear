@@ -22,10 +22,18 @@ public class slingshot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0) && force <= 5000)
+        if (Input.GetKey(KeyCode.Mouse0))
         {
-            force += 2000f * Time.deltaTime;
+            if(force <= 5000)
+            {
+                force += 2000f * Time.deltaTime;
+            }
             anim.SetBool("pull", true);
+            forceDisplay.text = (force / 1000f).ToString("F1");
+        }
+        else
+        {
+            forceDisplay.text = "";
         }
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
@@ -38,6 +46,6 @@ public class slingshot : MonoBehaviour
             }
             force = 0;
         }
-        forceDisplay.text = force.ToString("F0");
+        
     }
 }
